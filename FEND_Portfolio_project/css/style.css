@@ -1,0 +1,132 @@
+/* ----------------------
+  General
+------------------------*/
+
+*{
+  transition: width .75s
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  margin: 30px 0 30px 0;
+}
+
+img {
+  transition: width 0.5s;
+  width: 100%;
+}
+
+hr {
+  border-width: thick;
+  border-color: #7d97ad;
+}
+
+a {
+  color: #2d3c49;
+}
+
+a:hover {
+  background-color: #02b3e4;
+  color: #fff;
+  text-decoration: none;
+  transition: .2s;
+  padding: 5px;
+  border-radius: 2px;
+}
+
+/* ----------------------
+  Layout
+------------------------*/
+
+#header-name h1, h4 {
+  text-align: center;
+  color: #2d3c49;
+}
+
+#header-name h1 {
+  font-size: 45px;
+  font-weight: lighter;
+
+}
+
+#featured {
+  text-align: center;
+  color: #7d97ad;
+}
+
+.col-md-4 {
+  text-align: center;
+  color: #2d3c49;
+}
+
+/* ----------------------
+  Media Queries
+------------------------*/
+
+@media screen and (max-width: 639px) {
+  .udacity-logo img {
+    display: block;
+    margin: 0 auto 0;
+    width: 50%;
+    max-width: 50px;
+    padding: 0;
+  }
+
+  .col-md-4 {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 640px) {
+
+  .udacity-logo img {
+    margin-left: 45%;
+    margin-right: 45%;
+    width: 10%;
+    }
+
+    .col-md-4 {
+      margin: 0 auto;
+      width: 90%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+
+}
+
+
+@media screen and (min-width: 992px) {
+
+  img {
+   width: 100%;
+ }
+
+  .udacity-logo img {
+    float: left;
+    margin: 0;
+    width: 100px;
+  }
+
+  #header-name h1, h4 {
+    text-align: right;
+    color: #2d3c49;
+  }
+
+  #header-name h1 {
+    font-size: 75px;
+  }
+
+  #featured {
+    text-align: left;
+  }
+
+  .col-md-4 {
+    display: inline;
+    width: 33.333333%;
+  }
+
+
+}
